@@ -1,0 +1,206 @@
+* {
+  font-family: 'Overpass', sans-serif;
+}
+
+
+.jumbotron {
+
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.modal-footer {
+    padding: 10px 15px 0;
+}
+
+.container-thumbnail {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.container-fluid {
+     padding-right: 0px;
+
+}
+
+.navbar {
+
+    background-color: rgb(13, 59, 119); /*MENOS 10 PA GRIFINDOL*/
+    margin: 0px;
+
+}
+
+.navbar-nav > li {
+
+  font-size: 12px;
+
+}
+
+.navbar-text {
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand {
+color: white;
+
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+
+  color: rgb(240, 133, 8);
+
+
+}
+
+.navbar-default .navbar-nav .navbar-text > a  {
+color: white;
+
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+   background-color: rgb(11, 48, 97);
+
+}
+
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+   color: rgb(240, 133, 8);
+}
+
+
+.thumbnail-img-wrapper {
+  height: 213px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.thumbnail-img-wrapper#second {
+  background-image: url('../img/aee.jpg');
+}
+
+.thumbnail-img-wrapper#first {
+  background-image: url('../img/cee.jpg');
+}
+
+.thumbnail-img-wrapper#third {
+  background-image: url('../img/college.jpg');
+}
+
+.thumbnail-img-modal {
+
+  width: 291.105px;
+  height: 143.88px;
+
+}
+
+.about-block {
+  border:1px;
+  border-color: rgb(11, 48, 97);
+
+}
+
+                                /*Buttons Beginning*/
+.jumbotron .btn-lg:hover,
+.jumbotron .btn-lg:focus {
+   color: #fff;
+   background-color: rgb(240, 133, 8);
+}
+
+.modal-footer .btn-default:hover,
+.modal-footer .btn-default:focus {
+   color: #fff;
+   background-color: rgb(240, 133, 8);
+}
+
+.button-wrapper .btn-lg:hover,
+.button-wrapper .btn-lg:focus {
+   color: #fff;
+   background-color: rgb(240, 133, 8);
+}
+.button-wrapper{
+
+  text-align: center;
+
+}
+
+.btn-default {
+    color: white;
+    background-color: #fff;
+    border-color: white;
+}
+
+.modal-button .btn:hover,
+.modal-button .btn:focus, {
+background-color: rgb(240, 133, 8);
+
+
+}
+
+.modal-header .close {
+    margin: auto;
+}
+
+
+
+                                  /*Buttons End*/
+
+.caption {
+  text-align: center;
+
+}
+
+.btn {
+  background-color: rgb(13, 59, 119);
+}
+
+.triangle-border {
+    /*position: relative;*/
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 5px solid rgb(240, 133, 8);
+    color: #333;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  .modal-dialog {
+    width: 1000px;
+  }
+
+  .left-side,
+  .right-side {
+      min-height: 500px;
+  }
+
+  .left-side {
+    border-right: 1px solid black;
+  }
+
+  .modal-title {
+
+    text-align: right;
+    padding-right: 25px;
+}
+
+
+  .modal-footer {
+      padding: 10px 10px 10px 0;
+  }

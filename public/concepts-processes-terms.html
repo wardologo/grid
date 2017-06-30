@@ -5,47 +5,55 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" media="screen" title="no title">
-    <link rel="stylesheet" href="../assets/css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="../assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+    <title> Grid </title>
 
 </head>
 
 <body>
 
     <header>
-
         <nav class="navbar navbar-default">
-
             <div class="container-fluid">
+
                 <div class="navbar-header">
                     <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                 <span class="sr-only">Toggle navigation</span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-              </button>
-                    <a href="#" class="navbar-brand"> Grid </a>
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+                    <a href="index.html" class="navbar-brand navbar-text"> Grid </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"> <a href="index.html"> About us </a></li>
-                        <li> <a href="concepts-processes-terms.html"> Concepts, Processes and Terms </a> </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Edrick E. Pomales Rodríguez
-                    <span class="caret"></span></a>
+                        <li class="navbar-text"> <a href="index.html"> About us </a></li>
+                        <li class="active navbar-text"> <a href="concepts-processes-terms.html"> Concepts, Processes and Terms </a> </li>
+                        <li class="navbar-text">
+                            <hr>
+                        </li>
+                        <li class="dropdown navbar-text">
+                            <a href="#" class=" dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Edrick E. Pomales Rodríguez
+                  <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li> <a href="#">Action</a> </li>
                                 <li> <a href="#">Another action</a> </li>
                                 <li> <a href="#">Something else here</a> </li>
-                                <li role="separator" class="divider"></li>
                                 <li> <a href="#">Separated link</a> </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </nav>
 
@@ -53,40 +61,59 @@
 
     <main>
         <section class="info">
-            <div class="container">
+            <div class="container-thumbnail container">
                 <div class="row">
-                    <div class="col-md-4">
+
+                    <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <img src="../assets/img/cee.jpg" alt="Comisión Estatal de Elecciones" />
+                            <div id="first" class="thumbnail-img-wrapper">
+                            </div>
                             <div class="caption">
                                 <h3> State Elections Commission </h3>
                                 <p> The State Elections Commissions is the governmental agency in charge of carrying out and overseeing official electorial events in Puerto Rico. </p>
-                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ceeModal"> How to get your voters license  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <img src="../assets/img/aee.jpg" alt="Autoridad de Energía Eléctrica" />
-                                <div class="caption">
-                                    <h3> Electrical Energy Authority </h3>
-                                    <p> The Electrical Energy Authority is the sole provider of electrical power in all of Puerto Rico. </p>
-                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#aeeModal"> How to get your voters license  </button>
+                                <div class="button-wrapper">
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ceeModal"> How to get your voters license </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div id="second" class="thumbnail-img-wrapper">
+                            </div>
+                            <div class="caption">
+                                <h3> Electrical Energy Authority </h3>
+                                <p> The Electrical Energy Authority is the sole provider of electrical power in all of Puerto Rico.</p> <br>
+                                <div class="button-wrapper">
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#aeeModal"> How to setup utility service  </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div id="third" class="thumbnail-img-wrapper">
+                            </div>
+                            <div class="caption">
+                                <h3> College / University </h3>
+                                <p> The State Elections Commissions is the governmental agency in charge of carrying out and overseeing official electorial events in Puerto Rico. </p>
+                                <div class="button-wrapper">
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#collegeModal"> How to apply to college  </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                
+            </div>
         </section>
-
-
     </main>
 
+                                      <!-- Modal Content Beginning -->
 
     <div class="modal fade" id="ceeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -95,16 +122,56 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel"> State Elections Commission </h4>
                 </div>
-                <div class="modal-body">
-                    <p> The State Elections Commissions is the governmental agency in charge of carrying out and overseeing official electorial events in Puerto Rico. </p>
 
-                    <div class="modal-footer">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-4 left-side">
+                                <img src="assets/img/modal-cee.jpg" alt="CEE Central Offices" class="thumbnail-img-modal" />
+                                <br><br>
+                                <p> So, you want to set up electrical utilities.<br> Well first of all, is the service going to be setup in your name or on behalf of someone else? The AEE's requirements will vary depending on your situation. Don't worry,
+                                    regardless of your situation, we have the information you need. </p>
+
+                                <!-- <ul>
+                                    <li id="el-link"> <a href="#"> Setting Up the Service In Your Name </a> </li>
+                                    <li id="un-link"> <a href="#"> Setting Up the Service For Someone Else </a> </li>
+                                    <li id="otro-link"> <a href="#"> Futher information </a> </li>
+                                </ul>
+                            </div>
+                            <div id="content" class="col-xs-8 right-side">
+                                To setup electrical utilities in your name, you need:
+                                <ul>
+                                    <li> Valid identification with photo </li>
+                                    <li> Social Security Number </li>
+                                    <li> Residential contract: purchase or rent </li>
+                                    <li> Residential address </li>
+
+                                    <li> Number of electric meter
+                                        <ul>
+                                            <li> <i> *Note: If you live in a property that is divided in different units, you must look for the number corresponding to <b> your </b> particular unit. </i> </li>
+                                        </ul>
+                                        <li> Service deposit
+                                            <ul>
+                                                <li> Rented unit: $150.00</li>
+                                                <li> Purchased unit: $200.00</li>
+                                            </ul>
+                                        </li>
+                                </ul>
+
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-btn">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+  </div>
 
     <div class="modal fade" id="aeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -113,11 +180,39 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel"> Electrical Energy Authority </h4>
                 </div>
-                <div class="modal-body">
-                    <p> The Electrical Energy Authority is the sole provider of electrical power in all of Puerto Rico. </p>
 
-                    <div class="modal-footer">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-4 left-side">
+                                <img src="assets/img/modal-aee.jpg" alt="AEE Central Offices" class="thumbnail-img-modal" />
+                                <br><br>
+                                <p> So, it's time to set up electrical utilities.<br> Well, before even considering making a visit to an AEE office, let us ask you the following question: Is the service going to be setup in your name or on behalf of someone else? The AEE's requirements will vary depending on who you're setting up the service for. Don't worry, regardless of your situation, we got your back. </p>
+
+                                <ul>
+                                    <li id="aee-link1"> <a href="#"> Things to keep in mind </a> </li>
+                                    <li id="aee-link2"> <a href="#"> Setting up the service in your name </a> </li>
+                                    <li id="aee-link3"> <a href="#"> Setting up the service for someone else </a></li>
+                                    <li id="aee-link4"> <a href="#"> Futher information </a> </li>
+                                </ul>
+                            </div>
+                            <div id="content" class="col-xs-8 right-side">
+                                Before visiting an AEE office, please take the following points into consideration:
+                                <ul>
+                                    <li> Verify which AEE office corresponds to the property's location <ul>
+                                      <li> The AEE office that is responsible for setting up the service will vary based on where the property is located. Please call the AEE's <span title="(787) 521-3434"> <u> central office </u> </span> before making a visit, in order to certify which AEE office you should visit.</li>
+                                    </ul>  </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-btn">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
                     </div>
                 </div>
             </div>
@@ -125,9 +220,64 @@
     </div>
 
 
+    <div class="modal fade" id="collegeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"> College / University </h4>
+                </div>
 
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-4 left-side">
+                                <img src="assets/img/modal-college.jpg" alt="University of Puerto Rico Logo" class="thumbnail-img-modal" />
+                                <br><br>
+                                <p> So, you want to set up electrical utilities.<br> Well first of all, is the service going to be setup in your name or on behalf of someone else? The AEE's requirements will vary depending on your situation. Don't worry,
+                                    regardless of your situation, we have the information you need. </p>
 
+                                <!-- <ul>
+                                    <li id="el-link"> <a href="#"> Setting Up the Service In Your Name </a> </li>
+                                    <li id="un-link"> <a href="#"> Setting Up the Service For Someone Else </a> </li>
+                                    <li id="otro-link"> <a href="#"> Futher information </a> </li>
+                                </ul>
+                            </div>
+                            <div id="content" class="col-xs-8 right-side">
+                                To setup electrical utilities in your name, you need:
+                                <ul>
+                                    <li> Valid identification with photo </li>
+                                    <li> Social Security Number </li>
+                                    <li> Residential contract: purchase or rent </li>
+                                    <li> Residential address </li>
 
+                                    <li> Number of electric meter
+                                        <ul>
+                                            <li> <i> *Note: If you live in a property that is divided in different units, you must look for the number corresponding to <b> your </b> particular unit. </i> </li>
+                                        </ul>
+                                        <li> Service deposit
+                                            <ul>
+                                                <li> Rented unit: $150.00</li>
+                                                <li> Purchased unit: $200.00</li>
+                                            </ul>
+                                        </li>
+                                </ul>
+
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-btn">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                          <!-- Modal Content Ending -->
 
 
 
